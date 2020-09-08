@@ -17,16 +17,15 @@ import java.security.InvalidAlgorithmParameterException;
 import java.security.NoSuchAlgorithmException;
 import java.security.NoSuchProviderException;
 
-
 public class Main {
-    static String privateKeyStr = "bf0f0905b55d587307bd3f76e046b5a2eedbf0f09ae611fa42e78aecf49a63b2";
+    static String privateKeyStr = "a59bc058eb76eea5b64f1e55a803aa0968efda8a943f8f7eb835a6df9ac3a835";
     static String toAddress = "GNC1fa42f91e2db08d2e66d18a969bf3d95e855c9db";
     static String outBalance = "500";//ether
-    static int chainid = 37111;
+    static int chainid = 37021;
 
     public static void main(String[] args) throws IOException {
 
-        Web3j web3j = Web3j.build(new HttpService("http://127.0.0.1:8545"));
+        Web3j web3j = Web3j.build(new HttpService("http://chain-node.galaxynetwork.vip/"));
         BigInteger chain = web3j.ethChainId().send().getChainId();
         System.out.println("chain----->"+chain);
 
