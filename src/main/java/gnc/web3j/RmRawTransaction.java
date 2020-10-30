@@ -159,4 +159,18 @@ public class RmRawTransaction {
     public boolean isEIP1559Transaction() {
         return gasPrice == null && gasPremium != null && feeCap != null;
     }
+
+    @Override
+    public String toString() {
+        return "RmRawTransaction{" +
+                "nonce=" + nonce +
+                ", gasPrice=" + gasPrice +
+                ", gasLimit=" + gasLimit +
+                ", to='" + to + '\'' +
+                ", value=" + value +
+                ", data='" + data + '\'' +
+                ", gasPremium=" + gasPremium +
+                ", feeCap=" + feeCap +
+                '}';
+    }
 }

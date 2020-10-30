@@ -17,7 +17,7 @@ import java.util.List;
  * Name: RmTransactionEncoder
  * Author: Administrator
  * Email:
- * Comment: //新的RM交易编码规则
+ * Comment:
  * Date: 2020-05-19 14:11
  */
 public class RmTransactionEncoder {

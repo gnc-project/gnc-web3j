@@ -310,14 +310,14 @@ public class RmSign {
         private final byte[] r;
         private final byte[] s;
 
-        public SignatureData(byte v, byte[] r, byte[] s) {
-            this(new byte[] {v}, r, s);
-        }
-
         public SignatureData(byte[] v, byte[] r, byte[] s) {
             this.v = v;
             this.r = r;
             this.s = s;
+        }
+
+        public SignatureData(byte v, byte[] r, byte[] s) {
+            this(new byte[] {v}, r, s);
         }
 
         public byte[] getV() {
